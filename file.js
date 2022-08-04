@@ -1,0 +1,1 @@
+const file = "THIS IS A FILE"
