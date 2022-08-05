@@ -11,6 +11,7 @@ let transporter = nodemailer.createTransport({
 	}
 })
 
+// mail options
 let mailOptions = {
 	from: "test01@gmail.com",
 	to: "test02@gmail.com", "test04@gmail.com",
@@ -25,5 +26,4 @@ transporter.sendMail(mailOptions, function(err, info){
 	} else {
 		console.log("Email sent: " + info.response)
 	}
-
 })

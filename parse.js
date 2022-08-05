@@ -6,7 +6,6 @@ const url = require("url")
 const server = http.createServer((req, res) => {
 
 		let clientUrl = url.parse(req.url, true)
-		console.log(clientUrl)
 
 		let fileName3 = `.${clientUrl.pathname}`
 		fs.readFile(fileName3, "utf8", function(error, data){
@@ -23,5 +22,5 @@ const server = http.createServer((req, res) => {
 
 
 
-// listen to port
+// listen to port 
 server.listen(3200, () => console.log(`server is running on port 3200`))
