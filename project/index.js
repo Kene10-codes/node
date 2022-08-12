@@ -16,8 +16,7 @@ const server = http.createServer((req, res) => {
 		   	}
 		   	res.write(data)
 		   	res.end()
-		   })
-		   
+		   })	   
 	}
 
 	else if(clientUrl.pathname == "/about") {
@@ -29,7 +28,6 @@ const server = http.createServer((req, res) => {
 		   	res.write(data)
 		   	res.end()
 		   })
-		   
 	}
 
 	else if(clientUrl.pathname == "/contact-me") {
@@ -54,4 +52,4 @@ const server = http.createServer((req, res) => {
 	}
 })
 
-server.listen(port, () => console.log(`Listening to ther server on port ${port}`))
+server.listen(port, () => console.log(`Listening to ther server on port ${port}`))h
